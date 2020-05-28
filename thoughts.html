@@ -8,11 +8,12 @@
 <style>
 
 @import url("https://fonts.xz.style/serve/liberation-sans.css");
+@import url("https://fonts.xz.style/serve/liberation-mono.css");
 
 html {
-  padding: 10px;
   font-family: 'Liberation Sans', Arial, sans-serif;
   font-size: 16px;
+  padding: .5em;
 }
 
 body {
@@ -23,17 +24,72 @@ body {
   line-height: 1.25;
 }
 
-a.thought-date {
+pre {
+  overflow-x: auto;
+  overflow-wrap: normal;
+  word-wrap: normal;
+  padding: 0em .25em;
+  border-radius: 3px;
+  background: #eeeeee;
+  margin: .25em 0em;
+}
+
+code {
+  font-family: 'Liberation Mono', Courier New, monospace;
+  font-size: 0.8em;
+}
+
+code:not(.block){
+  padding: 0em .2em;
+  border-radius: 3px;
+  background: #eeeeee;
+}
+
+.thought-date {
   font-weight: bold;
   font-size: 0.8em;
+  text-align: right;
+  padding: 5px;
+}
+
+section.thought {
+  margin: 1em 0em;
+}
+
+div.thought {
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  border-color: #eeeeee;
+  padding: .5em;
+}
+
+div.title {
+  margin: 1em 0em;
 }
 
 </style>
 </head>
 <body>
-<span style="font-style:italic;font-size:2em">
-    Jahz's Thoughts 💭
-</span>
+<div class="title"><span style="font-style:italic;font-size:2em">
+<span style="color:#ff0000">t</span><span style="color:#00ff00">h</span><span style="color:#ffff00">o</span><span style="color:#0000ff">u</span><span style="color:#ff00ff">g</span><span style="color:#00ffff">h</span><span style="color:#ff0000">t</span><span style="color:#00ff00">s</span>
+</span></div>
+
+<!-- Your thoughts start here -->
+
+<section class="thought"><div class="thought-date"><a class="thought-date" id="380562660229" href="#380562660229">
+11:58 AM | 2020-05-28</a></div><div class="thought">
+Really fascinating article and thread about software and capitalism: https://lobste.rs/s/8mroaa/where_did_software_go_wrong
+
+I've been doing a lot of thinking about these topics recently. Perhaps the biggest realization that I've had is that capital is an <em>abstraction</em>. It is an abstraction for work and for value. I think that I'd understood this logically before, but desribing it in terms of an abstraction helped me internalize it as a computer person. And as a computer person, abstractions are my bread and butter. We know that abstractions help us reach heights that we can't achieve without them. We also
+know that abstractions have <em>costs</em>. One of these costs is the loss of awareness of the abstractions beneath you, of the layers that are supporting you in reaching for new heights. And in any system related to humans, whether a computer system or an economic/political one, HUMANS are the bottom layer. Humans are the turtle at the bottom of the stack, and we lose awareness of them the more we abstract away our inconvenieces. America has perfected the art and science of creating
+and harnessing abstractions. We have made incredible advances in many areas of society. These advances would not have been possible without our dedication to abstraction, to removing inefficiencies and pursuing perfection. Yet these abstractions, these improvements, have cost us. They have left us disengaged from that fundamental, bottom turtle: the human being.
+
+I hope to fight to engage with the human behind everything I do. It is the call that I have as a fellow human, and it is the call that my God has given me. I think that this is where Jesus really provides the only framework for a restored humanity: He is the God of plenty, and He also knows each individual more deeply than anyone else. He calls us to be "must be concerned about the whole man", as Reverend Martin Luther King put it. I want to be a person concerned with the whole man.
+
+We now return to your regularly scheduled programming.
+</div></section>
+
 <p class="thought"><a class="thought-date" id="199572257829" href="#199572257829">
 09:31 PM | 2020-05-27</a><br>
 Ahhh nothing like the satisfaction of squashing a tricky bug. Found out that you can't see pre-flight OPTIONS requests in Chrome, so I installed HTTP Toolkit and my life changed. This will be one of my main tools for building and debugging web apps! First day as a software contractor has come to a very nice conclusion! Time for dinner now 😋
