@@ -1,3 +1,12 @@
+<section class="thought"><div class="thought-date"><a class="thought-date" id="213785006029" href="#213785006029">
+02:50 PM | 2020-06-13</a></div><div class="thought">
+Mastodon install update: don't forget to add your <code>mastodon</code> Linux user to the sudo group like so: <br>
+<br>
+``` <br>
+usermod -aG sudo mastodon <br>
+``` 
+</div></section>
+
 <section class="thought"><div class="thought-date"><a class="thought-date" id="59772870129" href="#59772870129">
 02:00 PM | 2020-06-13</a></div><div class="thought">
 Mastodon install update: make sure that you have granted your <code>mastodon</code> PostGres user the createdb privilege, otherwise the wizard will fail! Also make sure that you don't create the <code>mastodon_production</code> db right from psql. You can give the create db permission like so: <br>
