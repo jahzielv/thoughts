@@ -1,3 +1,11 @@
+<section class="thought"><div class="thought-date"><a class="thought-date" id="59772870129" href="#59772870129">
+02:00 PM | 2020-06-13</a></div><div class="thought">
+Mastodon install update: make sure that you have granted your <code>mastodon</code> PostGres user the createdb privilege, otherwise the wizard will fail! Also make sure that you don't create the <code>mastodon_production</code> db right from psql. You can give the create db permission like so: <br>
+``` <br>
+ALTER USER mastodon CREATEDB; <br>
+``` 
+</div></section>
+
 <section class="thought"><div class="thought-date"><a class="thought-date" id="183326093029" href="#183326093029">
 01:27 PM | 2020-06-13</a></div><div class="thought">
 Mastodon install update: <b>MAKE SURE</b> that you create a PostGres user actually named <code>mastodon</code>. Also make sure that you give this user full access to your <code>mastodon_production</code> db, and that it has a password. Otherwise the Mastodon config wizard will fail. 
