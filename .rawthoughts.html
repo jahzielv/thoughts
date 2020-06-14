@@ -1,3 +1,9 @@
+<section class="thought"><div class="thought-date"><a class="thought-date" id="360088786829" href="#360088786829">
+09:49 PM | 2020-06-13</a></div><div class="thought">
+Mastodon install update: Emails from my server were still being marked as suspicious by Gmail. I discovered that Gmail uses several ways of verifying that emails aren't spoofed, including something called Sender Policy Framework (SPF). I found out more about SPF here: <a href="https://pepipost.com/tutorials/setup-spf-and-dkim-with-postfix-on-ubuntu/">https://pepipost.com/tutorials/setup-spf-and-dkim-with-postfix-on-ubuntu/</a> <br>
+The solution was to add a TXT record via my DNS service. I hadn't used Namecheap before for domain name services, but they've been good so far! Also my domain name was less than $2, so that's great 💯 
+</div></section>
+
 <section class="thought"><div class="thought-date"><a class="thought-date" id="44516373229" href="#44516373229">
 07:47 PM | 2020-06-13</a></div><div class="thought">
 Mastodon install update: Figured out how to undo the single user mode! Set <code>SINGLE_USER_MODE=false</code> in your .env.production, then run <code>bundle exec rake restart</code>. 
